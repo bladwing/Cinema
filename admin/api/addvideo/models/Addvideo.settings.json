@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "videos",
+  "info": {
+    "name": "addvideo",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "videolink": {
+      "type": "text"
+    },
+    "video": {
+      "model": "permission",
+      "via": "addvideos",
+      "plugin": "users-permissions"
+    }
+  }
+}
