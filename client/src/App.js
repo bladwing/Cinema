@@ -23,47 +23,47 @@ import Content from 'content'
 import ContactC from 'contact'
 import Footer from 'footer'
 import Login from 'login'
-
-
-
-
-
+import GalleryC from 'gallery'
 
 function App() {
   return (
-
   	<Router>
   	<div id="home1" className="container-fluid standard-bg">
   		<Header />
       	<Menu />
-      	
 			<Route path="/" component={Home} exact/>
 			<Route path="/gallery" component={Gallery} />
 			<Route path="/contact" component={Contact} />
 			<Route path="/login" component={Login} />
 	</div>
 		<Footer />
-	
-
 	</Router>
   );
 }
 
-function Home() {
-	return (
-		<div>
+class Home extends React.Component {
+	state= {
+		category: "Rock"
+	
+	}
+
+	changeCategory = (catName) => {
+		this.setState({category:catName})
+	}
+	render() {
+		return (<div>
 		 <h2 className="icon"><i className="fa fa-television" aria-hidden="true"></i>Home page</h2>
-			
-			<Leftbar />
-			<Content />
-		</div>
-	)
+			<Leftbar category={this.state.category} changeCategory={this.changeCategory}/>
+			<Content category={this.state.category}/>
+		</div>)
+	}
 }
 
 function Gallery() {
 	return (
 		<div>
 			<h2 clasNames="icon"><i className="fa fa-television" aria-hidden="true"></i>Gallery</h2>
+			<GalleryC />
 		</div>
 		)
 	}
@@ -75,15 +75,6 @@ function Contact() {
 		</div>
 		)
 	}
-function login() {
-	return (
-		<div>
-			<h2 className="icon"><i className="fa fa-television" aria-hidden="true"></i>Login</h2>
-			<Login />
-		</div>
-		)
-	}
-
 
 
 export default App;

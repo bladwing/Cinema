@@ -9,19 +9,28 @@
     "timestamps": true
   },
   "attributes": {
-    "Title": {
-      "type": "string"
-    },
-    "Description": {
-      "type": "text"
-    },
-    "videolink": {
-      "type": "text"
-    },
     "video": {
       "model": "permission",
       "via": "addvideos",
       "plugin": "users-permissions"
+    },
+    "videolink": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "enum": [
+        "",
+        "Rock",
+        "Pop",
+        "Trailer"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "VideoTitle": {
+      "type": "string",
+      "required": true
     }
   }
 }

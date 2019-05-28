@@ -663,7 +663,8 @@ ul.sidebar-links li {
 	display:block;
     margin-bottom: 10px;
 	border-bottom:1px solid #191919;
-	padding-bottom:10px
+	padding-bottom:10px;
+	text-align: left;
 }
 
 ul.sidebar-links li a {
@@ -1196,8 +1197,15 @@ blockquote footer {color:#fff;}
 .contact-info {display:block;}
 .contact-info ul {
 	display:inline-block;
-	margin:0;
+	font-family: 'Roboto Condensed';
+	text-align: left;
+	font-size: 18px;
+	margin-top: 10%;
 	padding:0;
+}
+.contact-info h3 {
+	margin-top: 30%;
+	font-family: 'Roboto Condensed';
 }
 
 .contact-info ul li {
