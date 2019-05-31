@@ -6,7 +6,9 @@ for start my project we needs install node_module for:
 Return to main direcotry and startup site in one command (npm start).
 
 Node express address : localhost:3020
+
 React.js address: localhost:3021
+
 Admin Strapi address: localhost:1337/admin
  username: fortest@tester.ge
  password: Tester123
