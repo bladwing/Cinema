@@ -1,7 +1,7 @@
 # cinema
-for start my project we needs install node_module for:
-  1) in main directory - install node_module for Node Express- (npm i).
-  2) after go to admin directory(cd admin) and install node_module (npm i) for admin STRAPi panel.
+For start my project we needs install node_module for:
+  1) In main directory - install node_module for Node Express- (npm i).
+  2) After go to admin directory(cd admin) and install node_module (npm i) for admin STRAPi panel.
   3) For finish go to client directory (cd client) and install node_module (npm i) for React.js.
 Return to main direcotry and startup site in one command (npm start).
 
