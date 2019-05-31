@@ -10,8 +10,10 @@ Node express address : localhost:3020
 React.js address: localhost:3021
 
 Admin Strapi address: localhost:1337/admin
- username: fortest@tester.ge
- password: Tester123
+
+  username: fortest@tester.ge
+
+  password: Tester123
  
  
  
