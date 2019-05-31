@@ -23,6 +23,8 @@
         "",
         "Rock",
         "Pop",
+        "Metal",
+        "Rap",
         "Trailer"
       ],
       "type": "enumeration",

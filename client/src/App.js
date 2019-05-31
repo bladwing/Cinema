@@ -32,7 +32,6 @@ function App() {
   		<Header />
       	<Menu />
 			<Route path="/" component={Home} exact/>
-			<Route path="/gallery" component={Gallery} />
 			<Route path="/contact" component={Contact} />
 			<Route path="/login" component={Login} />
 	</div>
@@ -52,21 +51,15 @@ class Home extends React.Component {
 	}
 	render() {
 		return (<div>
-		 <h2 className="icon"><i className="fa fa-television" aria-hidden="true"></i>Home page</h2>
+		
+		 	<GalleryC />
+		 	 <h2 className="icon"><i className="fa fa-television" aria-hidden="true"></i>Video</h2>
 			<Leftbar category={this.state.category} changeCategory={this.changeCategory}/>
 			<Content category={this.state.category}/>
 		</div>)
 	}
 }
 
-function Gallery() {
-	return (
-		<div>
-			<h2 clasNames="icon"><i className="fa fa-television" aria-hidden="true"></i>Gallery</h2>
-			<GalleryC />
-		</div>
-		)
-	}
 function Contact() {
 	return (
 		<div>
