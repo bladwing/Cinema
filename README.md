@@ -18,9 +18,12 @@ Admin Strapi address: localhost:1337/admin
  
  
 Used Technologies:
-=============
+
 Node Express
+
 React.js
+
 MongoDB
+
 Bootstrapi
 
