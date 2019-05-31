@@ -15,15 +15,4 @@ Admin Strapi address: localhost:1337/admin
 
   password: Tester123
  
- 
- 
-Used Technologies:
-
-Node Express
-
-React.js
-
-MongoDB
-
-Bootstrapi
 
