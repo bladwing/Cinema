@@ -1,4 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from 'header'
+import Menu from 'menu'
+import Leftbar from 'leftbar'
+import Content from 'content'
+import ContactC from 'contact'
+import Footer from 'footer'
+import Login from 'login'
+import GalleryC from 'gallery'
+import NotFound from '404';
+
 import './static/css/bootstrap.css'
 import './static/css/bootstrap.min.css'
 import './static/css/bootstrap-theme.css'
@@ -10,20 +21,6 @@ import './static/css/screen.css'
 import './static/css/lity.css'
 import './static/css/ie.css'
 
-// import './component/static/js/lity.js'
-// import './component/static/js/bootstrap.min.js'
-// import './component/static/js/test.js'
-
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
-import Header from 'header'
-import Menu from 'menu'
-import Leftbar from 'leftbar'
-import Content from 'content'
-import ContactC from 'contact'
-import Footer from 'footer'
-import Login from 'login'
-import GalleryC from 'gallery'
 
 function App() {
   return (
@@ -31,13 +28,18 @@ function App() {
   	<div id="home1" className="container-fluid standard-bg">
   		<Header />
       	<Menu />
-			<Route path="/" component={Home} exact/>
-			<Route path="/contact" component={Contact} />
-			<Route path="/login" component={Login} />
+      		<Switch>
+				<Route path="/" component={Home} exact/>
+				<Route path="/contact" component={Contact} />
+				<Route path="/login" component={Login} />
+				<Route path="*" component={NotFound} status={404} />
+			</Switch>
 	</div>
 		<Footer />
 	</Router>
+
   );
+
 }
 
 class Home extends React.Component {
