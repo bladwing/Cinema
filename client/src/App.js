@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from 'header'
-import Menu from 'menu'
-import Leftbar from 'leftbar'
-import Content from 'content'
-import ContactC from 'contact'
-import Footer from 'footer'
-import Login from 'login'
-import GalleryC from 'gallery'
-import NotFound from '404';
+import Header from './Components/header'
+import Menu from './Components/menu'
+import Leftbar from './Components/leftbar'
+import Content from './Components/content'
+import ContactC from './Components/contact'
+import Footer from './Components/footer'
+import Login from './Components/login'
+import GalleryC from './Components/gallery'
+import NotFound from './Components/404';
 
 import './static/css/bootstrap.css'
 import './static/css/bootstrap.min.css'
@@ -29,7 +29,7 @@ function App() {
   		<Header />
       	<Menu />
       		<Switch>
-				<Route path="/" component={Home} exact/>
+				<Route path="/" component={Home} exact />
 				<Route path="/contact" component={Contact} />
 				<Route path="/login" component={Login} />
 				<Route path="*" component={NotFound} status={404} />
