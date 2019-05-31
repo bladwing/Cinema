@@ -1,5 +1,5 @@
-import React from "react";
-import Axios from "axios";
+import React from 'react';
+import Axios from 'axios';
 import ReactPlayer from 'react-player';
 
 import '../../node_modules/video-react/dist/video-react.css';
@@ -20,8 +20,10 @@ export default class Content extends React.Component {
   render() {
     return (
          <div className="videoContainer">
+
           {this.state.videos.filter(video => video.category === this.props.category).map( video => {
            return (
+
             <ul className='video' key={video.id}>
             <li>
               <div className='player-wrapper'>

@@ -26,23 +26,23 @@ function App() {
   return (
   	<Router>
   		<div id="home1" className="container-fluid standard-bg">
-  		<Header />
-      	<Menu />
-      		<Switch>
-				<Route path="/" component={Home} exact />
-				<Route path="/contact" component={Contact} />
-				<Route path="/login" component={Login} />
-				<Route path="*" component={NotFound} status={404} />
-			</Switch>
+  			<Header />
+      		<Menu />
+      			<Switch>
+					<Route path="/" component={Home} exact />
+					<Route path="/contact" component={Contact} />
+					<Route path="/login" component={Login} />
+					<Route path="*" component={NotFound} status={404} />
+				</Switch>
 		</div>
-		<Footer />
+			<Footer />
 	</Router>
 
   )};
-
+           
 class Home extends React.Component {
 	state= {
-		category: "Rock"
+		category: 'Rock'
 	}
 
 	changeCategory = (catName) => {
