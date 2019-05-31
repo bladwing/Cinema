@@ -1,16 +1,13 @@
-import "../../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
-import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
-import "react-image-gallery/styles/css/image-gallery.css";
-import React from 'react'
-import '../../node_modules/react-image-gallery/styles/scss/image-gallery-no-icon.scss'
-import '../../node_modules/react-image-gallery/styles/css/image-gallery-no-icon.css'
-
-
-
-
+import React from 'react';
 import ImageGallery from 'react-image-gallery';
- 
-export default class MyComponent extends React.Component {
+
+import '../../node_modules/react-image-gallery/styles/scss/image-gallery.scss';
+import '../../node_modules/react-image-gallery/styles/css/image-gallery.css';
+import 'react-image-gallery/styles/css/image-gallery.css';
+import '../../node_modules/react-image-gallery/styles/scss/image-gallery-no-icon.scss';
+import '../../node_modules/react-image-gallery/styles/css/image-gallery-no-icon.css';
+
+export default class Slider extends React.Component {
  
   render() {
  
@@ -44,4 +41,4 @@ export default class MyComponent extends React.Component {
     );
   }
  
-}
+};

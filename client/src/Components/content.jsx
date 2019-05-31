@@ -1,8 +1,10 @@
 import React from "react";
 import Axios from "axios";
-import "../../node_modules/video-react/dist/video-react.css"
-import "../static/css/content.css"
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
+
+import '../../node_modules/video-react/dist/video-react.css';
+import '../static/css/content.css';
+
 
 export default class Content extends React.Component {
   state = {
@@ -28,7 +30,6 @@ export default class Content extends React.Component {
                     url={video.videolink}
                     width='100%'
                     height='240px'
-                    
                     controls
                   />
                 </div>
@@ -41,5 +42,5 @@ export default class Content extends React.Component {
       
     )
   }
-}                  
+};           
                

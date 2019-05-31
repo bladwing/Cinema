@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from 'react';
 
 function login() {
 	return(
@@ -67,9 +66,6 @@ function login() {
                </section>
             </div>
          </div>
-   
-
-
 		)
-}
-export default login
+};
+export default login;

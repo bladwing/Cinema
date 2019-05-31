@@ -1,8 +1,7 @@
 import React from 'react';
-import Social from './social'
-import { NavLink } from 'react-router-dom'
+import Social from './social';
+import { NavLink } from 'react-router-dom';
  
-
 function Menu() {
 	return(
 		<div className="row home-mega-menu ">
@@ -25,9 +24,9 @@ function Menu() {
                         		<NavLink to="/contact">Contact</NavLink>
                         	</li>
                      </ul>
+
                     <Social/>
 
-                    
                      <div className="search-block">
                         <form>
                            <input type="search" placeholder="Search" />
@@ -37,9 +36,6 @@ function Menu() {
                </nav>
             </div>
          </div>
-     
-
-
 		)
 }
 export default Menu;

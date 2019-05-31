@@ -1,8 +1,7 @@
-import React from 'react'
+import React from 'react';
 import Axios from "axios";
-import { NavLink } from 'react-router-dom'
-let hrefLink = '#'
-
+import { NavLink } from 'react-router-dom';
+let hrefLink = '#';
 
 export default class Filter extends React.Component {
   state = {
@@ -37,10 +36,9 @@ export default class Filter extends React.Component {
                         })}
                      </ul>
                   </article>
-                  <div className="clearfix spacer"></div>
                </aside>
             </div>
       
       )
    }
-}
+};

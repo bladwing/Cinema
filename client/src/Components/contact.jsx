@@ -1,5 +1,5 @@
 import React from 'react';
-import Social from './social'
+import Social from './social';
 
 function Contact() {
 	return(
@@ -53,12 +53,10 @@ function Contact() {
                                  </div>
                               </div>
                            </div>
-                           <div className="clearfix spacer"></div>
                         </article>
                      </div>
                   </div>
                </div>
-               <div className="clearfix spacer"></div>
             </div>
          </div>                 
                           
