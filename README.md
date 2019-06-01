@@ -16,3 +16,6 @@ Admin Strapi address: localhost:1337/admin
   password: Tester123
  
 
+==================================================
+
+For see other my works please visited my personal site - www.ponarenko.com
