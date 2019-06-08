@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    // "start": "concurrently \"nodemon ./bin/www\" \"cd client && npm start\" \"cd admin && strapi start"
-    "start": "node ./bin/www"
+    "start": "concurrently \"nodemon ./bin/www\" \"cd client && npm start\" \"cd admin && strapi start"
   },
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.4",
