@@ -5,6 +5,7 @@
   "scripts": {
     "start": "concurrently \"nodemon ./bin/www\" \"cd client && npm start\" \"cd admin && npm start\""
   },
+  
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.4",
     "body-parser": "^1.19.0",
