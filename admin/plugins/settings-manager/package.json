@@ -31,9 +31,7 @@
     "url": "https://github.com/strapi/strapi/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "deprecated": false,
   "description": "Strapi plugin to manage settings.",
   "devDependencies": {
